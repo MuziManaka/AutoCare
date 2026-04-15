@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact - Auto Care &amp; Diagnostics</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="contact.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="main.js" defer></script>
+</head>
+
+<body class="dark">
+    <nav class="nav-bar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                Auto Care &amp; Diagnostics
+            </a>
+            <div class="nav-links">
+                <a class="nav-link" href="Services.html">Services</a>
+
+                <a class="nav-link active" href="Contact.html">Contact</a>
+            </div>
+            <div class="burger-menu" id="menu-open">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <a href="Contact.html?service=default" class="btn btn-primary">
+                Book Service
+            </a>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Drawer -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-close" id="menu-close">
+            <span class="material-symbols-outlined">close</span>
+        </div>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="Services.html">Services</a>
+        <a class="nav-link" href="Contact.html">Contact</a>
+        <a class="btn btn-primary" href="Contact.html?service=default" style="margin-top: auto;">Book Service</a>
+    </div>
+    <main>
+        <!-- Contact Hero -->
+        <section class="section-padding">
+            <div class="container">
+                <div style="max-width: 800px;">
+                    <span class="badge" style="margin-bottom: 1rem;">Direct Interface</span>
+                    <h1 class="hero-title">
+                        Ready to <span class="text-gradient">Engineers</span> Excellence?
+                    </h1>
+                    <p class="hero-description" style="margin-top: 2rem;">
+                        Connect with our diagnostic specialists to schedule your precision assessment. We're here to
+                        optimize
+                        your automotive experience.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Contact Panel -->
+        <section class="section-padding" style="background: var(--surface-container-lowest);">
+            <div class="container">
+                <div class="grid-2 gap-8">
+                    <!-- Contact Form -->
+                    <div class="card glass-panel" style="padding: 3rem;">
+                        <h3 class="hero-title" style="font-size: 2rem; margin-bottom: 2rem;">Service Inquiry</h3>
+                        <form style="display: flex; flex-direction: column; gap: 1.5rem;">
+                            <div class="grid-2" style="gap: 1.5rem;">
+                                <div class="form-group">
+                                    <label class="form-label" for="name">Full Name</label>
+                                    <input class="form-input" id="name" placeholder="John Doe" type="text" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="phone">Phone Number</label>
+                                    <input class="form-input" id="phone" placeholder="082 790 0566" type="tel" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="car">Car Make &amp; Model</label>
+                                <input class="form-input" id="car" placeholder="Audi A4 2.0 TFSI" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="message">Your Message</label>
+                                <textarea class="form-input" id="message"
+                                    placeholder="Describe the issue or service required..." rows="4"></textarea>
+                            </div>
+                            <button class="btn btn-primary btn-lg" style="width: 100%; margin-top: 1rem;">
+                                Send Inquiry
+                                <span class="material-symbols-outlined" style="font-size: 1.25rem;">send</span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Details -->
+                    <div style="display: flex; flex-direction: column; gap: 2rem;">
+                        <div class="card" style="border: 1px solid rgba(78, 68, 74, 0.2);">
+                            <div class="flex items-start gap-4 mb-4">
+                                <div class="flex items-center justify-center"
+                                    style="width: 3rem; height: 3rem; background: var(--surface-container-high); border-radius: 0.75rem;">
+                                    <span class="material-symbols-outlined text-primary">location_on</span>
+                                </div>
+                                <div>
+                                    <h4 class="form-label" style="margin-bottom: 0.25rem;">Location</h4>
+                                    <p class="hero-description" style="color: var(--on-surface);">Walmansthal Road –
+                                        Next to Ludwig Roses</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="border: 1px solid rgba(78, 68, 74, 0.2);">
+                            <div class="flex items-start gap-4 mb-4">
+                                <div class="flex items-center justify-center"
+                                    style="width: 3rem; height: 3rem; background: var(--surface-container-high); border-radius: 0.75rem;">
+                                    <span class="material-symbols-outlined text-primary">call</span>
+                                </div>
+                                <div>
+                                    <h4 class="form-label" style="margin-bottom: 0.25rem;">Direct Line</h4>
+                                    <p class="hero-description"
+                                        style="color: var(--on-surface); font-size: 1.25rem; font-weight: 700;">082 790
+                                        0566</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="border: 1px solid rgba(78, 68, 74, 0.2);">
+                            <div class="flex items-start gap-4 mb-4">
+                                <div class="flex items-center justify-center"
+                                    style="width: 3rem; height: 3rem; background: var(--surface-container-high); border-radius: 0.75rem;">
+                                    <span class="material-symbols-outlined text-primary">schedule</span>
+                                </div>
+                                <div>
+                                    <h4 class="form-label" style="margin-bottom: 0.25rem;">Operating Hours</h4>
+                                    <p class="hero-description" style="color: var(--on-surface);">Mon–Fri: 8am–5pm</p>
+                                    <p class="hero-description"
+                                        style="font-size: 0.75rem; margin-top: 0.25rem; font-style: italic;">Weekends by
+                                        special appointment</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="btn btn-primary btn-lg"
+                            style="background: #25D366; color: #181216; justify-content: center;"
+                            href="https://wa.me/27827900566" target="_blank">
+                            <span class="material-symbols-outlined">chat</span>
+                            Message on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Specs -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="divider" style="margin: 0 0 4rem 0;"></div>
+                <div class="grid-4" style="text-align: center;">
+                    <div class="flex flex-column gap-2">
+                        <span class="stat-number">100%</span>
+                        <span class="form-label">Diagnostic Accuracy</span>
+                    </div>
+                    <div class="flex flex-column gap-2">
+                        <span class="stat-number">HEV/EV</span>
+                        <span class="form-label">Certified Techs</span>
+                    </div>
+                    <div class="flex flex-column gap-2">
+                        <span class="stat-number">OEM+</span>
+                        <span class="form-label">Parts Quality</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <div class="logo" style="margin-bottom: 1rem;">Auto Care &amp; Diagnostics</div>
+                <p class="hero-description" style="font-size: 0.875rem;">
+                    Delivering surgical precision to automotive maintenance. High-performance diagnostics for the
+                    discerning driver.
+                </p>
+            </div>
+            <div class="footer-links-grid">
+                <div class="footer-column">
+                    <div class="form-label" style="margin-bottom: 1rem;">Navigation</div>
+                    <a class="nav-link" href="#">Diagnostics</a>
+                    <a class="nav-link" href="#">Maintenance</a>
+                    <a class="nav-link" href="#">Repairs</a>
+                    <a class="nav-link" href="#">HVAC</a>
+                </div>
+                <div class="footer-column">
+                    <div class="form-label" style="margin-bottom: 1rem;">Legal &amp; Support</div>
+                    <a class="nav-link" href="#">Privacy Policy</a>
+                    <a class="nav-link" href="#">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footer-social">
+                <div class="flex gap-4">
+                    <span class="material-symbols-outlined nav-link" style="cursor: pointer;">share</span>
+                    <span class="material-symbols-outlined nav-link" style="cursor: pointer;">hub</span>
+                    <span class="material-symbols-outlined nav-link" style="cursor: pointer;">lan</span>
+                </div>
+                <div class="hero-description" style="font-size: 0.75rem; margin-top: 2rem;">
+                    © 2024 Auto Care &amp; Diagnostics. Engineering Precision.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuOpen = document.getElementById('menu-open');
+        const menuClose = document.getElementById('menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuOverlay = document.getElementById('menu-overlay');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        }
+
+        menuOpen.addEventListener('click', toggleMenu);
+        menuClose.addEventListener('click', toggleMenu);
+        menuOverlay.addEventListener('click', toggleMenu);
+
+        // Close menu on link click
+        const mobileLinks = mobileMenu.querySelectorAll('.nav-link');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', toggleMenu);
+        });
+    </script>
+</body>
+
+</html>
