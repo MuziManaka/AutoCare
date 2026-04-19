@@ -14,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="main.js" defer></script>
 </head>
 
@@ -73,27 +74,35 @@
                     <!-- Contact Form -->
                     <div class="card glass-panel" style="padding: 3rem;">
                         <h3 class="hero-title" style="font-size: 2rem; margin-bottom: 2rem;">Service Inquiry</h3>
-                        <form style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <form id="contact-form" style="display: flex; flex-direction: column; gap: 1.5rem;">
                             <div class="grid-2" style="gap: 1.5rem;">
                                 <div class="form-group">
                                     <label class="form-label" for="name">Full Name</label>
-                                    <input class="form-input" id="name" placeholder="John Doe" type="text" />
+                                    <input class="form-input" id="name" name="user_name" placeholder="John Doe"
+                                        type="text" required />
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label" for="phone">Phone Number</label>
-                                    <input class="form-input" id="phone" placeholder="082 790 0566" type="tel" />
+                                    <input class="form-input" id="phone" name="user_phone" placeholder="082 790 0566"
+                                        type="tel" required />
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="form-label" for="car">Car Make &amp; Model</label>
-                                <input class="form-input" id="car" placeholder="Audi A4 2.0 TFSI" type="text" />
+                                <input class="form-input" id="car" name="car_details" placeholder="Audi A4 2.0 TFSI"
+                                    type="text" required />
                             </div>
                             <div class="form-group">
                                 <label class="form-label" for="message">Your Message</label>
-                                <textarea class="form-input" id="message"
-                                    placeholder="Describe the issue or service required..." rows="4"></textarea>
+                                <textarea class="form-input" id="message" name="message"
+                                    placeholder="Describe the issue or service required..." rows="4"
+                                    required></textarea>
                             </div>
-                            <button class="btn btn-primary btn-lg" style="width: 100%; margin-top: 1rem;">
+                            <div id="form-status"
+                                style="display: none; padding: 1rem; border-radius: 0.5rem; font-size: 0.875rem; font-weight: 600;">
+                            </div>
+                            <button type="submit" id="submit-btn" class="btn btn-primary btn-lg"
+                                style="width: 100%; margin-top: 1rem;">
                                 Send Inquiry
                                 <span class="material-symbols-outlined" style="font-size: 1.25rem;">send</span>
                             </button>
