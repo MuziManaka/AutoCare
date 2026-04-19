@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Mechanical Excellence | Auto Care & Diagnostics</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="repair.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="main.js" defer></script>
+</head>
+
+<body class="dark">
+    <!-- TopNavBar -->
+    <nav class="nav-bar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                Auto Care &amp; Diagnostics
+            </a>
+            <div class="nav-links">
+                <a class="nav-link" href="Services.html">Services</a>
+                <a class="nav-link" href="Contact.html">Contact</a>
+            </div>
+            <div class="burger-menu" id="menu-open">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <a href="Contact.html?service=default" class="btn btn-primary">
+                Book Service
+            </a>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Drawer -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-close" id="menu-close">
+            <span class="material-symbols-outlined">close</span>
+        </div>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="Services.html">Services</a>
+        <a class="nav-link" href="Contact.html">Contact</a>
+        <a class="btn btn-primary" href="Contact.html?service=default" style="margin-top: auto;">Book Service</a>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section-padding" style="min-height: 80vh;">
+            <div class="hero-bg">
+                <img class="hero-img" alt="Engine Rebuild" style="opacity: 0.6; filter: brightness(0.7);"
+                    data-alt="Close-up of a high-performance V8 engine block in a sterile dark laboratory setting with vibrant pink and violet neon highlights"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcxmas_CE3FHvscIJcKhRVWJQKrGc0VsifXRhC-h-52X4SCXRU2ZPQ32SA5Vc7l69CZ7joVIyb--Ptc45NhbY-ey4p2EnfVGgV0hU26nexvqM6OL5KG1ZnYyzAcTZkoL3IF9PG7I5VSks3nHVnnAtXtUcf_CFHlNEZZ6i9320pJRkbaXfzIiQxF0v6ZlC9ctpIld0iA6UvFgzcDgpWWKa5bWCW2IObo754pAdGAyqPuQUFERL-DgoplPPob6ajdX2ET7YxqL5uAZ4" />
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content hero-content-wide">
+                    <div class="badge">
+                        Advanced Mechanical Division
+                    </div>
+                    <h1 class="hero-title" style="margin-bottom: 2rem;">
+                        Mechanical <span class="text-gradient">Excellence.</span><br />Engineering <span style="color: var(--secondary);">Precision.</span>
+                    </h1>
+                    <p class="hero-description" style="margin-bottom: 3rem;">
+                        From minor leaks to full structural rebuilds, we treat every repair as a mission-critical
+                        operation.
+                    </p>
+                    <div class="flex gap-4 wrap">
+                        <a href="Contact.html?service=repair" class="btn btn-primary btn-lg">
+                            Book Repair Service
+                        </a>
+                        <button class="btn btn-outline btn-lg">
+                            View Diagnostic Lab
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Engine & Transmission Lab -->
+        <section class="section-padding" style="background: var(--surface-low);">
+            <div class="container">
+                <div class="flex wrap justify-between items-end gap-8" style="margin-bottom: 4rem;">
+                    <div style="max-width: 600px;">
+                        <div class="badge" style="color: var(--primary); margin: 0 0 1rem 0;">SECTION 01 // POWERTRAIN</div>
+                        <h2 class="section-title">Engine &amp; Transmission Lab</h2>
+                    </div>
+                    <p class="section-description" style="max-width: 350px; font-size: 0.9rem;">
+                        Our facility maintains surgical-grade cleanliness to ensure zero contamination during internal
+                        component overhauls.
+                    </p>
+                </div>
+
+                <div class="powertrain-grid">
+                    <div class="powertrain-card-wide">
+                        <img alt="Transmission Overhaul" class="card-img" style="opacity: 0.4; transition: transform 0.7s;"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuASxRYIx2DqU41vA-OXJ0DDULWyw-mwRlzYx2JW3fmRAOx3UM-cW6OfRF8bGzxcDS1abJ67rUjL4qkUzd67Erb-FhVJWmEWQaDOkO1sLUD1LvLe9GY1HoflzPyMFkV0ZNPG48RYAgumWH2B6cl4n-nT5um9iBRKcCwEPx-6kQGmQxOuN-9Vrf56lHHgKPF1hiijj38k4Nqwnc459WmmRHxlUJuuZvi8OWcxVP3-DEy9EE50mJH_tNTVfmn8H07rK-egIOHjJRereug" />
+                        <div style="position: absolute; inset: 0; padding: 2.5rem; display: flex; flex-direction: column; justify-content: flex-end; z-index: 2;">
+                            <h3 class="card-title" style="font-size: 2rem; margin-bottom: 0.5rem;">Internal Rebuilds</h3>
+                            <p class="service-description" style="max-width: 400px;">Comprehensive restoration of torque converters, valve bodies, and gear trains to factory specifications.</p>
+                        </div>
+                        <div style="position: absolute; top: 1.5rem; right: 1.5rem; z-index: 2;">
+                            <div class="glass-panel" style="padding: 0.75rem; border-radius: 0.75rem; color: var(--primary);">
+                                <span class="material-symbols-outlined">precision_manufacturing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="powertrain-card-stacked">
+                        <div class="powertrain-detail-item accent">
+                            <span class="material-symbols-outlined text-primary" style="font-size: 2rem; margin-bottom: 1rem;">fluid</span>
+                            <h4 class="card-title" style="margin-bottom: 0.5rem;">Gaskets &amp; Seals</h4>
+                            <p class="service-description" style="font-size: 0.85rem;">Eliminating systemic leaks with multi-layer steel gaskets and aerospace-grade sealants.</p>
+                        </div>
+                        <div class="powertrain-detail-item light justify-center">
+                            <div class="flex items-center gap-4" style="margin-bottom: 1rem;">
+                                <div style="width: 3.5rem; height: 3.5rem; border-radius: 50%; border: 2px solid var(--secondary); display: flex; align-items: center; justify-content: center;">
+                                    <span class="card-title" style="color: var(--secondary); margin: 0; font-size: 1rem;">100%</span>
+                                </div>
+                                <span class="badge" style="color: var(--secondary); margin: 0; font-size: 10px;">TORQUE ACCURACY</span>
+                            </div>
+                            <p class="service-description" style="font-size: 0.85rem;">Every fastener is tightened using digitally calibrated instruments for structural integrity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chassis & Suspension Tuning -->
+        <section class="section-padding">
+            <div class="container grid-2 items-center gap-16">
+                <div class="order-2-md" style="position: relative;">
+                    <div style="position: absolute; top: 2rem; left: 2rem; width: 10rem; height: 10rem; background: var(--primary); opacity: 0.1; filter: blur(100px); border-radius: 50%;"></div>
+                    <div class="suspension-architecture-card">
+                        <h3 class="card-title" style="font-size: 1.5rem; margin-bottom: 2rem;">Suspension Architecture</h3>
+                        <div class="flex flex-column gap-8">
+                            <div class="flex gap-4">
+                                <span class="material-symbols-outlined text-secondary">vertical_align_center</span>
+                                <div>
+                                    <h5 class="card-title" style="margin: 0;">Shocks &amp; Struts</h5>
+                                    <p class="service-description" style="font-size: 0.85rem;">Adaptive damping restoration for precise handling response.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <span class="material-symbols-outlined text-secondary">architecture</span>
+                                <div>
+                                    <h5 class="card-title" style="margin: 0;">Precision Alignment</h5>
+                                    <p class="service-description" style="font-size: 0.85rem;">Laser-guided 4-wheel calibration for optimal tire contact.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <span class="material-symbols-outlined text-secondary">verified_user</span>
+                                <div>
+                                    <h5 class="card-title" style="margin: 0;">Structural Rigidity</h5>
+                                    <p class="service-description" style="font-size: 0.85rem;">Frame and chassis inspection ensuring mission-critical safety.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="badge" style="color: var(--secondary); margin: 0 0 1rem 0;">SECTION 02 // CHASSIS</div>
+                    <h2 class="section-title" style="font-size: 4rem; line-height: 0.9;">Tuned for<br /><span style="color: var(--secondary);">Control.</span></h2>
+                    <p class="section-description" style="margin: 2rem 0;">
+                        We don't just replace parts; we calibrate your vehicle's stance for a smoother, safer drive that
+                        feels connected to the asphalt.
+                    </p>
+                    <div class="tuning-accent-line"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Electrical Systems -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="electrical-heartbeat-card">
+                    <img alt="Electrical Diagnostic" style="position: absolute; right: 0; top: 0; width: 50%; height: 100%; object-fit: cover; opacity: 0.2;"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuACu_Z26EPCXE-tG63A1WjjRfUbhOt9mMIz2WUB7BrF_l9NvQJpx6o5CK0GCOn7T_HWCtVs7cL7Yyk7wVgqHx5R82nk62FrmJ4TNUjDrNwKBmUwN3sRr0QziZQ4G6kv-83Af2ezG3730u95F9w6bCNGP_YomtJzAXiVfw6zFKvldy6_LUKAllZfQ3tTP2r3EkK3s8EpXmHAMDQId-nOd4OoLht4qNJYmmru4qZ7NOLBF3sot1ngJ7oEDpRTiVwd8gkPqPCLQDdmNww" />
+                    
+                    <div style="position: relative; z-index: 2; max-width: 600px;">
+                        <span class="material-symbols-outlined text-primary" style="font-size: 3rem; margin-bottom: 2rem; font-variation-settings: 'FILL' 1;">bolt</span>
+                        <h2 class="section-title">Electrical Heartbeat</h2>
+                        <p class="section-description" style="margin: 2rem 0;">
+                            Modern vehicles are supercomputers on wheels. Our specialist lab diagnoses the intricate
+                            electrical networks that keep your engine firing and your systems operational.
+                        </p>
+                        <div class="electrical-module-grid">
+                            <div class="electrical-module-item">
+                                <span class="material-symbols-outlined text-primary" style="margin-bottom: 0.5rem;">battery_charging_full</span>
+                                <div class="card-title" style="font-size: 1rem; margin: 0;">Battery Lab</div>
+                                <div class="badge" style="font-size: 8px; margin: 0.25rem 0 0 0; opacity: 0.6;">DEEP-CYCLE TESTING</div>
+                            </div>
+                            <div class="electrical-module-item">
+                                <span class="material-symbols-outlined text-primary" style="margin-bottom: 0.5rem;">electrical_services</span>
+                                <div class="card-title" style="font-size: 1rem; margin: 0;">Alternators</div>
+                                <div class="badge" style="font-size: 8px; margin: 0.25rem 0 0 0; opacity: 0.6;">STABILITY ANALYSIS</div>
+                            </div>
+                            <div class="electrical-module-item">
+                                <span class="material-symbols-outlined text-primary" style="margin-bottom: 0.5rem;">speed</span>
+                                <div class="card-title" style="font-size: 1rem; margin: 0;">Starters</div>
+                                <div class="badge" style="font-size: 8px; margin: 0.25rem 0 0 0; opacity: 0.6;">TORQUE RESPONSE</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="section-padding" style="position: relative; overflow: hidden;">
+            <div style="position: absolute; inset: 0; background: var(--primary); opacity: 0.05;"></div>
+            <div class="container" style="position: relative; z-index: 2; text-align: center;">
+                <h2 class="section-title" style="font-size: 4rem;">Ready for a <span class="text-gradient">Peak Performance</span> Check?</h2>
+                <p class="section-description" style="margin: 2rem auto; max-width: 650px;">
+                    Schedule your precision diagnostic today and ensure your vehicle is operating at its engineered
+                    potential.
+                </p>
+                <div class="flex gap-4 justify-center wrap">
+                    <a href="Contact.html?service=repair" class="btn btn-primary btn-lg">
+                        Book Repair Service
+                    </a>
+                    <button class="btn btn-outline btn-lg">
+                        Contact a Specialist
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <div class="logo" style="font-size: 1.5rem; margin-bottom: 1.5rem;">Auto Care &amp; Diagnostics</div>
+                <p class="service-description" style="font-size: 0.9rem; line-height: 1.6;">
+                    Engineering precision for every mile. Our diagnostic approach ensures your vehicle performs as the engineers intended.
+                </p>
+            </div>
+            <div class="footer-links-grid">
+                <div class="footer-column">
+                    <div class="badge" style="margin: 0 0 1rem 0;">SPECIALIZATIONS</div>
+                    <a href="diagnostic.html" class="nav-link" style="padding: 0.25rem 0;">Diagnostics</a>
+                    <a href="PreventativeCare.html" class="nav-link" style="padding: 0.25rem 0;">Maintenance</a>
+                    <a href="Repair.html" class="nav-link" style="padding: 0.25rem 0;">Repairs</a>
+                </div>
+                <div class="footer-column">
+                    <div class="badge" style="margin: 0 0 1rem 0;">CONNECT</div>
+                    <p class="service-description" style="font-size: 0.8rem;">2500 Precision Way,<br />Engineering District</p>
+                    <p class="service-description" style="font-size: 0.8rem; margin-top: 1rem;">© 2024 Auto Care &amp; Diagnostics.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Logic
+        const menuOpen = document.getElementById('menu-open');
+        const menuClose = document.getElementById('menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuOverlay = document.getElementById('menu-overlay');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        }
+
+        menuOpen.addEventListener('click', toggleMenu);
+        menuClose.addEventListener('click', toggleMenu);
+        menuOverlay.addEventListener('click', toggleMenu);
+    </script>
+</body>
+
+</html>

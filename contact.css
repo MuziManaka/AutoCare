@@ -1,0 +1,47 @@
+/* 
+   Auto Care & Diagnostics - Contact Page Styles
+*/
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--outline);
+    font-weight: 700;
+}
+
+.form-input,
+.form-textarea {
+    background: var(--surface-container-highest);
+    border: none;
+    border-bottom: 2px solid var(--outline-variant);
+    padding: 0.75rem 0;
+    color: var(--on-surface);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.form-input::placeholder {
+    color: var(--on-surface-variant);
+    opacity: 0.5;
+}
+
+/* Specific Contact Layouts */
+@media (max-width: 400px) {
+    .contact-cta-panel .hero-title {
+        font-size: 1.75rem !important;
+    }
+}
