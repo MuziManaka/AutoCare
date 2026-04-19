@@ -15,6 +15,17 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
     <script src="main.js" defer></script>
+    <script src="contact.js" defer></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+             emailjs.init({
+             publicKey: ("HGQ8zidQLfZLvuZ_w")
+         });
+         })();
+    </script>
 </head>
 
 <body class="dark">
@@ -83,6 +94,10 @@
                                     <label class="form-label" for="phone">Phone Number</label>
                                     <input class="form-input" id="phone" placeholder="072 415 3441" type="tel" />
                                 </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="email">Email Address</label>
+                                    <input class="form-input" id="email" placeholder="john.doe@example.com" type="email" />
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label class="form-label" for="car">Car Make &amp; Model</label>
@@ -93,7 +108,7 @@
                                 <textarea class="form-input" id="message"
                                     placeholder="Describe the issue or service required..." rows="4"></textarea>
                             </div>
-                            <button class="btn btn-primary btn-lg" style="width: 100%; margin-top: 1rem;">
+                            <button class="btn btn-primary btn-lg" style="width: 100%; margin-top: 1rem;" onclick="sendmail()">
                                 Send Inquiry
                                 <span class="material-symbols-outlined" style="font-size: 1.25rem;">send</span>
                             </button>

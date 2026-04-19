@@ -48,3 +48,4 @@ document.addEventListener('DOMContentLoaded', () => {
         messageArea.focus();
     }
 });
+document.onclick
